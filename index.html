@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 You Can Do It!</h1>
+    <div class="gender-selection">
+    <div>
+    <label>
+        <input type="radio" name="gender" value="boy" checked>
+        👦 Boy
+    </label>
+    </div>
+    <div>
+    <label>
+        <input type="radio" name="gender" value="girl">
+        👧 Girl
+    </label>
+    </div>
+</div>
+
+<div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter Task">
+
+        <input type="datetime-local" id="taskDate">
+
+        <button onclick="addTask()">Add Task</button>
+</div>
+
+    <ol id="taskList"></ol>
+</div>
+
+<script src="select.js"></script>
+</body>
+</html>
